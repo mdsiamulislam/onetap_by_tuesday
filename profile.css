@@ -1,0 +1,18 @@
+/* Full-page digital profile (what a tapped card opens). Reuses .pf from style.css */
+.profile-body { background: var(--surface); }
+.profile-page { position: relative; width: min(100%, 460px); min-height: 100vh; min-height: 100dvh; margin-inline: auto; background: #fff; }
+.profile-page .pf { font-size: 15px; padding-bottom: 8px; animation: pageIn .6s ease both; }
+.profile-page .pf-cover { height: 150px; }
+.profile-page .pf-head { margin-top: -56px; }
+.profile-page .pf-avatar { width: 112px; height: 112px; }
+.profile-page .pf h3 { font-size: 1.7rem; }
+.profile-page .pf-actions, .profile-page .pf-social { padding-inline: 22px; }
+.profile-page .pf-sec { margin-inline: 22px; }
+.profile-page .pf-save { height: 52px; }
+.profile-page .toast { position: fixed; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
+.profile-foot { padding: 20px 20px calc(28px + env(safe-area-inset-bottom, 0px)); text-align: center; color: var(--muted); font-size: .85rem; }
+.profile-foot strong { color: var(--ink); font-family: var(--display); }
+@keyframes pageIn { from { opacity: 0; transform: translateY(10px); } }
+@media (min-width: 520px) {
+  .profile-page { margin-block: 32px; min-height: 0; border-radius: 32px; border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden; }
+}

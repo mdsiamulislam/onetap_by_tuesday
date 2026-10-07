@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tapfolio — Your card. Your digital identity.</title>
+    <meta
+      name="description"
+      content="Tap an NFC card and instantly open a premium digital profile with contact details, links and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="#top" class="brand"
+          ><span class="brand-mark" data-icon="nfc"></span
+          ><span data-bind="site.brand"></span
+        ></a>
+        <nav class="nav-links" aria-label="Main">
+          <a href="#how">How it works</a>
+          <a href="#profile">Profile</a>
+          <a href="#features">Features</a>
+          <a href="#customize">Customize</a>
+        </nav>
+        <a class="btn btn-sm" href="profile.html">Create profile</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- 1. Hero -->
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <h1>Your card.<br />Your digital identity.</h1>
+          <p class="lead">
+            Tap your NFC card and instantly share your professional profile,
+            contact information and social links — all in one place.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#how">See how it works</a>
+            <a class="btn btn-ghost" href="#profile">View digital profile</a>
+          </div>
+        </div>
+
+        <div
+          class="stage"
+          aria-label="An NFC card tapping a phone that shows a digital profile"
+        >
+          <div class="phone">
+            <div class="screen">
+              <div class="pf-scroll" data-profile="main"></div>
+            </div>
+          </div>
+          <div class="rings" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="nfc-card hero-card" role="img" aria-label="NFC card">
+            <span class="nfc-card-mark" data-icon="nfc"></span>
+            <div class="nfc-card-id">
+              <strong data-bind="name"></strong
+              ><span data-bind="company"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Tap experience -->
+      <section class="section wrap" id="how">
+        <div class="split">
+          <div class="reveal">
+            <h2>Tap the card.<br />Your profile opens instantly.</h2>
+            <ol class="steps">
+              <li class="active">
+                <span data-icon="card"></span>
+                <div>
+                  <strong>Tap your card</strong>
+                  <p>Hold it near any modern smartphone.</p>
+                </div>
+              </li>
+              <li>
+                <span data-icon="nfc"></span>
+                <div>
+                  <strong>Phone detects NFC</strong>
+                  <p>No app and no scanning needed.</p>
+                </div>
+              </li>
+              <li>
+                <span data-icon="user"></span>
+                <div>
+                  <strong>Profile opens</strong>
+                  <p>Your details appear in the browser.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="td reveal" data-step="0" aria-hidden="true">
+            <div class="td-rings"><span></span><span></span></div>
+            <div class="nfc-card mini-card">
+              <span class="nfc-card-mark" data-icon="nfc"></span>
+            </div>
+            <div class="td-phone">
+              <div class="td-off" data-icon="nfc"></div>
+              <div class="td-on">
+                <img data-bind-src="avatar" alt="" /><i></i><i></i><b></b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2–4. Profile demo -->
+      <section class="section demo" id="profile">
+        <div class="wrap split split-rev">
+          <div class="demo-phone reveal">
+            <div class="phone">
+              <div class="screen">
+                <div class="pf-scroll" data-profile="main"></div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <h2>This is your digital profile</h2>
+            <p class="lead">
+              Try it. Save the contact, open the links and collapse the
+              sections. This is exactly what people see when they tap your card.
+            </p>
+            <ul class="ticks">
+              <li>
+                <span data-icon="check"></span>Save to contacts in one tap
+              </li>
+              <li>
+                <span data-icon="check"></span>Call, email or message directly
+              </li>
+              <li>
+                <span data-icon="check"></span>Social links, services and
+                highlights
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Features -->
+      <section class="section wrap" id="features">
+        <h2 class="center reveal">Everything people need, in one tap</h2>
+        <div class="grid reveal">
+          <article>
+            <span data-icon="bolt"></span>
+            <h3>One tap sharing</h3>
+            <p>Share your profile instantly through NFC.</p>
+          </article>
+          <article>
+            <span data-icon="link"></span>
+            <h3>All your links</h3>
+            <p>Phone, email, website and social profiles together.</p>
+          </article>
+          <article>
+            <span data-icon="user"></span>
+            <h3>Professional profile</h3>
+            <p>Present yourself with a modern digital identity.</p>
+          </article>
+          <article>
+            <span data-icon="refresh"></span>
+            <h3>Always updatable</h3>
+            <p>Change your details without changing the card.</p>
+          </article>
+          <article>
+            <span data-icon="device"></span>
+            <h3>Mobile friendly</h3>
+            <p>Your profile works beautifully on smartphones.</p>
+          </article>
+          <article>
+            <span data-icon="share"></span>
+            <h3>Easy to share</h3>
+            <p>One tap is enough to introduce yourself.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 7. Card + profile -->
+      <section class="section pair">
+        <div class="wrap">
+          <h2 class="center reveal">
+            One physical card.<br />One powerful digital profile.
+          </h2>
+          <div class="pair-row reveal">
+            <div class="pair-card">
+              <div class="nfc-card big-card" role="img" aria-label="NFC card">
+                <span class="nfc-card-mark" data-icon="nfc"></span>
+                <div class="nfc-card-id">
+                  <strong data-bind="name"></strong
+                  ><span data-bind="title"></span>
+                </div>
+              </div>
+              <p>Physical card</p>
+            </div>
+            <svg class="pair-link" viewBox="0 0 120 24" aria-hidden="true">
+              <path d="M2 12h108M100 4l10 8-10 8" />
+            </svg>
+            <div class="pair-phone">
+              <div class="phone">
+                <div class="screen">
+                  <div class="pf-scroll" data-profile="main"></div>
+                </div>
+              </div>
+              <p>Digital profile</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Customization -->
+      <section class="section wrap" id="customize">
+        <div class="split">
+          <div class="reveal">
+            <h2>Make it yours</h2>
+            <p class="lead">
+              Same profile system. Different details, accent color and section
+              order.
+            </p>
+            <div
+              class="tabs"
+              role="tablist"
+              aria-label="Profile types"
+              id="tabs"
+            ></div>
+            <div
+              class="variant-info"
+              id="variant-info"
+              aria-live="polite"
+            ></div>
+          </div>
+          <div class="demo-phone reveal">
+            <div class="phone">
+              <div class="screen">
+                <div class="pf-scroll" data-profile="variant"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Final CTA -->
+      <section class="final wrap reveal">
+        <h2>Ready to turn your card into a digital identity?</h2>
+        <p class="lead">
+          A simple tap can share everything people need to know about you.
+        </p>
+        <a class="btn btn-lg" data-bind-href="site.ctaHref"
+          >Create your profile</a
+        >
+      </section>
+    </main>
+
+    <footer class="foot wrap">
+      <span class="brand"
+        ><span class="brand-mark" data-icon="nfc"></span
+        ><span data-bind="site.brand"></span
+      ></span>
+      <small>Demo profile shown for illustration.</small>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
